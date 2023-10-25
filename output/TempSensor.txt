@@ -1,0 +1,14 @@
+TempSensor, 7.000000
+TempSensor, -15.000000
+TempSensor, 33.000000
+TempSensor, 6.000000
+TempSensor, 6.000000
+TempSensor, 2.000000
+TempSensor, erer -17.000000
+TempSensor, 21.000000
+TempSensor, 37.000000
+TempSensor, 14.000000
+TempSensor, 20.000000
+TempSensor, 39.000000
+TempSensor, 24.000000
+TempSensor, 48.000000

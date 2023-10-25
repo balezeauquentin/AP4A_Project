@@ -1,0 +1,10 @@
+HumiditySensor, 70.000000
+HumiditySensor, 41.000000
+HumiditySensor, 55.000000
+HumiditySensor, 10.000000
+HumiditySensor, 88.000000
+HumiditySensor, 19.000000
+HumiditySensor, erer 41.000000
+HumiditySensor, 42.000000
+HumiditySensor, 68.000000
+HumiditySensor, 35.000000
