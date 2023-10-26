@@ -11,7 +11,10 @@ public:
 private:
     template <typename Sensor>
     void StartTimer(Sensor& sensor, int interval);
-
+    
+    template <typename Sensor>
+    void genSensorVal(Sensor& sensor);
+    
     template <typename Sensor>
     void DataCollector(Sensor& sensor);
 

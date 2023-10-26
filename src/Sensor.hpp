@@ -4,64 +4,79 @@
 #include <string>
 
 using namespace std;
+
+template <typename T>
 class Sensor
 {
-private:
-
 public:
-    Sensor();
-    Sensor(const Sensor& other);
-    virtual ~Sensor();
-    template <typename T> 
+    string filename;
+    T value;
+public:
+    Sensor() : filename(""), value(0) {}
+
+    Sensor(const Sensor& other) : filename(other.filename), value(other.value) {}
+
+    ~Sensor() {
+        filename = "";
+        value = 0;
+    }
     T sendData(){
-        return 0;
+        return value;
+    }  
+    string getFileName(){
+        return filename;
     }
-    template <typename T>
-    T aleaGenVal(){
-        return 0;
-    }
-    virtual std::string getFileName();
+    virtual void aleaGenVal() = 0;
 };
 
-class TemperatureSensor : protected Sensor
+class TemperatureSensor : public Sensor<float>
 {
     private :
-        std::string filename = "TempSensor.txt";
 
     public :
-        float sendData();
-        float aleaGenVal();
-        std::string getFileName();
+        TemperatureSensor(){
+            filename = "TemperatureSensor.txt";
+            value = 0;
+        }
+        void aleaGenVal();
 };
 
-class LightSensor : protected Sensor
+class LightSensor : public Sensor<bool>
 {
     private :
-        std::string filename = "LightSensor.txt";
+
     public :
-        bool sendData();
-        bool aleaGenVal();
-        std::string getFileName();
+        LightSensor(){
+            filename = "LifhtSensor.txt";
+            value = 0;
+        };
+
+        void aleaGenVal();
 };
 
-class HumiditySensor : private Sensor
+class HumiditySensor : public Sensor<float>
 {
     private :
-        std::string filename = "HumiditySensor.txt";
+
+
     public :
-        float sendData();
-        float aleaGenVal();
-        std::string getFileName();
+        HumiditySensor(){
+            filename ="HumiditySensor.txt";
+            value = 0;
+        }
+        void aleaGenVal();
 };
 
-class SoundSensor : private Sensor
+class SoundSensor : public Sensor<int>
 {
     private :
-        std::string filename = "SoundSensor.txt";
+
     public :
-        int sendData();
-        int aleaGenVal();
-        std::string getFileName();
+        SoundSensor(){
+            filename = "SoundSensor.txt";
+            value = 0;
+        }
+        void aleaGenVal();
 };
 
 #endif

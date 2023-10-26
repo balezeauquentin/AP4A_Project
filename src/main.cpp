@@ -8,7 +8,7 @@
 
 using namespace std; // Use the standard namespace
 
-int main() {
+int main(int argc, char const *argv[]) {
     srand(time(NULL)); // Initialize the random number generator
     Schedule schedule; // Create a schedule object
     schedule.StartDataCollection(); // Start the data collection
