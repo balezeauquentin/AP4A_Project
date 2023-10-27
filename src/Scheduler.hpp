@@ -4,10 +4,9 @@
 #include "Server.hpp"
 #include "Sensor.hpp"
 
-class Schedule {
+class Scheduler {
 public:
-    void StartDataCollection();
-
+    void StartDataCollection(bool logActivation, bool consoleActivation);
 private:
     template <typename Sensor>
     void StartTimer(Sensor& sensor, int interval);
@@ -22,8 +21,7 @@ private:
     LightSensor lightSensor;
     HumiditySensor humiSensor;
     SoundSensor soundSensor;
-
     Server server;
-};
+    };
 
 #endif // SCHEDULE_HPP

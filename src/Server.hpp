@@ -30,7 +30,8 @@ public:
     void consoleWrite(string mess);
     void fileWrite(SensorData dataStruct);
     string getName();
-
+    void setConsoleActivation(bool consoleActivation);
+    void setLogActivation(bool logActivation);
     template <typename T>
     void dataRcv(T sensorData, std::string fileName){
         SensorData dataSent;

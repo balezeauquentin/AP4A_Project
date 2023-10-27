@@ -7,13 +7,11 @@
 using namespace std;
 
 Server::Server() {
-
+    
 }
 
-Server::Server(std::string name)
-{
+Server::Server(string name) {
     this->name = name;
-    // constructor implementation
 }
 
 Server::Server(const Server& other) {
@@ -37,12 +35,12 @@ void Server::consoleWrite(string data) {
 
 void Server::fileWrite(SensorData dataStruct) {
     string programPath = std::filesystem::current_path().string(); // Get the current path of the program
-    programPath.erase(programPath.end()-15, programPath.end()); // Remove the last 15 characters from the path
-    string filePath = "\\Projet_AP4A\\output\\"; // Define the file path
+    programPath.erase(programPath.end()-4, programPath.end()); // Remove /src from the path
+    string filePath = programPath + "\\output\\"; // Define the file path
     ofstream file; // Create a file stream
 
     // Open the file in append mode
-    file.open(programPath + filePath + dataStruct.fileName, std::ios::app);
+    file.open(filePath + dataStruct.fileName, std::ios::app);
     if (file.is_open()) { // If the file is open
         // Write the sensor name and data to the file
         file << dataStruct.sensorName << ", " << dataStruct.data << std::endl;
@@ -59,3 +57,10 @@ void Server::operator<<(string data) {
     consoleWrite(data);
 }
 
+void Server::setLogActivation(bool logActivation) {
+    this->logActivation = logActivation;
+}
+
+void Server::setConsoleActivation(bool consoleActivation) {
+    this->consoleActivation = consoleActivation;
+}

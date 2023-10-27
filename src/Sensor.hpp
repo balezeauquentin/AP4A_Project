@@ -2,13 +2,14 @@
 #define SENSOR_HPP
 
 #include <string>
+#include <iostream>
 
 using namespace std;
 
 template <typename T>
 class Sensor
 {
-public:
+protected:
     string filename;
     T value;
 public:
@@ -20,7 +21,7 @@ public:
         filename = "";
         value = 0;
     }
-    T sendData(){
+    T getValue(){
         return value;
     }  
     string getFileName(){
@@ -31,8 +32,6 @@ public:
 
 class TemperatureSensor : public Sensor<float>
 {
-    private :
-
     public :
         TemperatureSensor(){
             filename = "TemperatureSensor.txt";
@@ -43,11 +42,9 @@ class TemperatureSensor : public Sensor<float>
 
 class LightSensor : public Sensor<bool>
 {
-    private :
-
     public :
         LightSensor(){
-            filename = "LifhtSensor.txt";
+            filename = "LightSensor.txt";
             value = 0;
         };
 
@@ -56,9 +53,6 @@ class LightSensor : public Sensor<bool>
 
 class HumiditySensor : public Sensor<float>
 {
-    private :
-
-
     public :
         HumiditySensor(){
             filename ="HumiditySensor.txt";
@@ -69,8 +63,6 @@ class HumiditySensor : public Sensor<float>
 
 class SoundSensor : public Sensor<int>
 {
-    private :
-
     public :
         SoundSensor(){
             filename = "SoundSensor.txt";

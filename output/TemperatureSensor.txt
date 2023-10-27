@@ -1,0 +1,4 @@
+TemperatureSensor, 8.599226
+TemperatureSensor, 3.267554
+TemperatureSensor, 33.105804
+TemperatureSensor, 37.437050

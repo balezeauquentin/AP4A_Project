@@ -6,26 +6,34 @@ using namespace std;
 
 
 void TemperatureSensor::aleaGenVal(){
-    float random = rand() % (7000 - 2000)/100.0;
-    value = random;
+        random_device rd;
+        mt19937 gen(rd());
+        uniform_real_distribution<float> dis(0.0, 50.0);
+        value = dis(gen);
 }
 
 
 void LightSensor::aleaGenVal(){
-    bool random = rand() % 2;
-    value = random;
+        random_device rd;
+        mt19937 gen(rd());
+        uniform_int_distribution<int> dis(0, 1);
+        value = dis(gen);
 }
 
 
 void HumiditySensor::aleaGenVal(){
-    float random = rand() % (10000 - 100)/100.0;
-    value = random;
+        random_device rd;
+        mt19937 gen(rd());
+        uniform_real_distribution<float> dis(0.0, 100.0);
+        value = dis(gen);
 }
 
 
 void SoundSensor::aleaGenVal(){
-    int random = rand() % 100 + 1; 
-    value = random;
+        random_device rd;
+        mt19937 gen(rd());
+        uniform_int_distribution<int> dis(1, 100);
+        value = dis(gen);
 }
 
 
