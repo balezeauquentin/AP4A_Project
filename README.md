@@ -1,97 +1,97 @@
-# Simulateur d'Écosystème IoT pour la Surveillance de la Qualité de l'Air
+# IoT Ecosystem Simulator for Air Quality Monitoring
 
 ## Description
 
-Ce projet offre un simulateur dédié à la modélisation d'un écosystème IoT axé sur la surveillance de la qualité de l'air. Il se compose de plusieurs classes essentielles, notamment la classe Server, Sensor, et Scheduler.
+This project provides a simulator dedicated to modeling an IoT ecosystem focused on air quality monitoring. It consists of several essential classes, including the Server, Sensor, and Scheduler classes.
 
-## Fonctionnement
+## Operation
 
-L'écosystème fonctionne de manière harmonieuse en suivant ces étapes :
+The ecosystem operates smoothly following these steps:
 
-1. **Capteurs Multiples :** Divers capteurs, tels que ceux dédiés à la lumière, à la température, à l'humidité et au son, sont intégrés dans le simulateur.
+1. **Multiple Sensors:** Various sensors, such as those dedicated to light, temperature, humidity, and sound, are integrated into the simulator.
 
-2. **Scheduler :** La classe Scheduler joue un rôle central en rassemblant les données provenant de ces capteurs. Elle coordonne l'ensemble du processus en préparant les informations pour l'envoi ultérieur.
+2. **Scheduler:** The Scheduler class plays a central role in gathering data from these sensors. It coordinates the entire process by preparing information for later transmission.
 
-3. **Serveur Intelligent :** Équipé d'un algorithme intégré, le serveur prend en charge l'orchestration de l'envoi des données des capteurs. Il optimise la communication en organisant les données à des intervalles de temps diversifiés, offrant ainsi une efficacité accrue.
+3. **Smart Server:** Equipped with an integrated algorithm, the server supports the orchestration of sensor data transmission. It optimizes communication by organizing data at diverse time intervals, providing increased efficiency.
 
-## Classes Principales
+## Main Classes
 
 ### 1. Server
 
-La classe Server représente le cerveau du système, coordonnant la réception et l'envoi des données. Son algorithme intégré assure une gestion intelligente des informations pour une utilisation efficace des ressources.
+The Server class represents the system's brain, coordinating the reception and transmission of data. Its integrated algorithm ensures intelligent information management for efficient resource utilization.
 
 ### 2. Sensor
 
-La classe Sensor encapsule les différents types de capteurs présents dans l'écosystème. Chaque capteur est spécialisé dans la collecte d'une dimension particulière de données liées à la qualité de l'air.
+The Sensor class encapsulates the various types of sensors present in the ecosystem. Each sensor specializes in collecting data related to a specific dimension of air quality.
 
 ### 3. Scheduler
 
-La classe Scheduler agit comme un planificateur central, organisant la collecte et la préparation des données des capteurs avant de les transmettre au serveur. Elle optimise le processus pour une communication fluide et efficace.
+The Scheduler class acts as a central scheduler, organizing the collection and preparation of sensor data before transmitting it to the server. It optimizes the process for smooth and efficient communication.
 
-## Comment Utiliser
+## How to Use
 
-1. **Paramètres du programme :** Pour utiliser le projet, vous avez deux options de paramètres.
-
-   ```bash
-   nom_du_programme true true
-   ```
-Le premier paramètre gère l'écriture dans les fichiers logs, et le deuxième gère l'affichage dans la console.
-
-## Comment Compiler et Implémenter le Projet
-### Compilation sur Windows avec g++
-
-1. **Prérequis :** Assurez-vous d'avoir g++ (le compilateur C++) installé sur votre système.
-
-2. **Téléchargement du Code Source :** Clonez le dépôt GitHub dans votre terminal.
+1. **Program Parameters:** To use the project, you have two parameter options.
 
    ```bash
-   git clone https://github.com/votre-utilisateur/simulateur-iot
+   program_name true true
    ```
+   The first parameter manages writing to log files, and the second manages display in the console.
 
-3. **Accéder au Répertoire :** Naviguez vers le répertoire du projet.
+## How to Compile and Implement the Project
+### Compilation on Windows with g++
+
+1. **Prerequisites:** Ensure you have g++ (the C++ compiler) installed on your system.
+
+2. **Download Source Code:** Clone the GitHub repository in your terminal.
 
    ```bash
-   cd simulateur-iot
+   git clone https://github.com/your-username/iot-simulator
    ```
 
-4. **Compilation :** Utilisez g++ pour compiler le code source.
+3. **Navigate to Directory:** Go to the project directory.
 
    ```bash
-   g++ -o simulateur main.cpp Sensor.cpp Scheduler.cpp Server.cpp
+   cd iot-simulator
    ```
 
-5. **Exécution :** Exécutez le programme généré.
+4. **Compilation:** Use g++ to compile the source code.
 
    ```bash
-   simulateur
+   g++ -o simulator main.cpp Sensor.cpp Scheduler.cpp Server.cpp
    ```
 
-### Compilation sur Linux avec g++
-
-1. **Prérequis :** Assurez-vous d'avoir g++ installé sur votre système.
-
-2. **Téléchargement du Code Source :** Clonez le dépôt GitHub dans votre terminal.
+5. **Execution:** Run the generated program.
 
    ```bash
-   git clone https://github.com/votre-utilisateur/simulateur-iot
+   simulator
    ```
 
-3. **Accéder au Répertoire :** Naviguez vers le répertoire du projet.
+### Compilation on Linux with g++
+
+1. **Prerequisites:** Ensure you have g++ installed on your system.
+
+2. **Download Source Code:** Clone the GitHub repository in your terminal.
 
    ```bash
-   cd simulateur-iot
+   git clone https://github.com/your-username/iot-simulator
    ```
 
-4. **Compilation :** Utilisez g++ pour compiler le code source.
+3. **Navigate to Directory:** Go to the project directory.
 
    ```bash
-   g++ -o simulateur main.cpp Sensor.cpp Scheduler.cpp Server.cpp
+   cd iot-simulator
    ```
 
-5. **Exécution :** Exécutez le programme généré.
+4. **Compilation:** Use g++ to compile the source code.
 
    ```bash
-   ./simulateur
+   g++ -o simulator main.cpp Sensor.cpp Scheduler.cpp Server.cpp
    ```
 
-Ces instructions sont basées sur l'hypothèse que vos fichiers sources sont main.cpp, Sensor.cpp, Scheduler.cpp, et Server.cpp. Si les noms de vos fichiers sont différents, assurez-vous de les ajuster lors de la compilation. Explorez le simulateur IoT en C++ et testez ses fonctionnalités sur votre plateforme préférée!
+5. **Execution:** Run the generated program.
+
+   ```bash
+   ./simulator
+   ```
+
+These instructions assume that your source files are named main.cpp, Sensor.cpp, Scheduler.cpp, and Server.cpp. If your file names are different, make sure to adjust them during compilation. Explore the C++ IoT simulator and test its features on your preferred platform!
