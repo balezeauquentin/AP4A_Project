@@ -1,2 +1,14 @@
 LightSensor, 1
 LightSensor, 0
+LightSensor, 1
+LightSensor, 0
+LightSensor, 1
+LightSensor, 1
+LightSensor, 0
+LightSensor, 1
+LightSensor, 0
+LightSensor, 1
+LightSensor, 1
+LightSensor, 1
+LightSensor, 0
+LightSensor, 1
