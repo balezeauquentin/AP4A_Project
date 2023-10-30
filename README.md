@@ -30,12 +30,51 @@ The Scheduler class acts as a central scheduler, organizing the collection and p
 
 ## How to Use
 
-1. **Program Parameters:** To use the project, you have two parameter options.
+Sure, let's tweak your README with the new parameter information:
+
+1. **Program Parameters:** To use the project, you have several parameter options.
 
    ```bash
-   program_name true true
+   program_name -l -c
    ```
-   The first parameter manages writing to log files, and the second manages display in the console.
+   The parameters allow you to customize the program behavior. Here's a breakdown of the available options:
+
+   - `-l` or `--log`: Activates logging, directing messages to log files.
+   - `-c` or `--console`: Activates console output, displaying messages in the console.
+
+   Additionally, you can use the following options for special functionality:
+
+   - `-v` or `--version`: Displays the version number of the program.
+
+   ```bash
+   program_name -v
+   ```
+
+   - `-h` or `--help`: Displays the help message, providing information on how to use the program and its options.
+
+   ```bash
+   program_name -h
+   ```
+
+   Example usage:
+
+   ```bash
+   program_name -l -c
+   ```
+
+   This command activates both logging and console output.
+
+   ```bash
+   program_name -v
+   ```
+
+   This command displays the version number of the program.
+
+   ```bash
+   program_name -h
+   ```
+
+   This command displays the help message, explaining how to use the program and its available options.
 
 ## How to Compile and Implement the Project
 ### Compilation on Windows with g++
