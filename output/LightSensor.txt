@@ -1,14 +1,25 @@
-LightSensor, 1
-LightSensor, 0
-LightSensor, 1
-LightSensor, 0
-LightSensor, 1
-LightSensor, 1
-LightSensor, 0
-LightSensor, 1
-LightSensor, 0
-LightSensor, 1
-LightSensor, 1
-LightSensor, 1
-LightSensor, 0
-LightSensor, 1
+Light, 0 lux
+Light, 0 lux
+Light, 1 lux
+Light, 0 lux
+Light, 0 lux
+Light, 1 lux
+Light, 1 lux
+Light, 1 lux
+Light, 0 lux
+Light, 1 lux
+Light, 1 lux
+Light, 0 lux
+Light, 1 lux
+Light, 1 lux
+Light, 0 lux
+Light, 0 lux
+Light, 1 lux
+Light, 1 lux
+Light, 0 lux
+Light, 1 lux
+Light, 0 lux
+Light, 1 lux
+Light, 0 lux
+Light, 1 lux
+Light, 0 lux

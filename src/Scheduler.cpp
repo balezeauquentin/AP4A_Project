@@ -4,8 +4,8 @@
 #include <thread> // Include the thread library for thread management
 #include <chrono> // Include the chrono library for time management
 
-#define TEMP_TIMER 1000 // Define the temperature sensor timer interval
-#define LIGHT_TIMER 2000 // Define the light sensor timer interval
+#define TEMP_TIMER 2000 // Define the temperature sensor timer interval
+#define LIGHT_TIMER 3000 // Define the light sensor timer interval
 #define HUMI_TIMER 1500 // Define the humidity sensor timer interval
 #define SOUND_TIMER 2500 // Define the sound sensor timer interval
 
@@ -18,6 +18,7 @@
 void Scheduler::StartDataCollection(bool logActivation, bool consoleActivation) {
     server.setLogActivation(logActivation); // Set the logging activation flag
     server.setConsoleActivation(consoleActivation); // Set the console output activation flag
+    
     StartTimer(tempSensor, TEMP_TIMER);  // Start the temperature sensor timer
     StartTimer(lightSensor, LIGHT_TIMER); // Start the light sensor timer
     StartTimer(humiSensor, HUMI_TIMER);  // Start the humidity sensor timer
@@ -35,7 +36,7 @@ template <typename Sensor>
 void Scheduler::StartTimer(Sensor& sensor, int interval) {
     std::thread([this, &sensor, interval]() {
         while (true) {
-            
+
             genSensorVal(sensor); // Generate a value for the sensor
             DataCollector(sensor); // Collect data from the sensor
 

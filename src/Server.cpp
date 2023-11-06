@@ -59,7 +59,7 @@ Server::~Server() {
  * @param data The message to write to the console.
  */
 void Server::consoleWrite(string data) {
-    std::cout << "Console out: " << data << std::endl;
+    std::cout << "Data: " << data << std::endl;
 }
 
 /**
@@ -76,7 +76,16 @@ void Server::fileWrite(SensorData dataStruct) {
     file.open(filePath + dataStruct.fileName, std::ios::app);
     if (file.is_open()) { // If the file is open
         // Write the sensor name and data to the file
-        file << dataStruct.sensorName << ", " << dataStruct.data << std::endl;
+        if(dataStruct.sensorName == "Temperature"){
+            file << dataStruct.sensorName << ", " << dataStruct.data << " °C" << std::endl;
+        } else if (dataStruct.sensorName == "Light"){
+            file << dataStruct.sensorName << ", " << dataStruct.data << " lux" << std::endl;
+        } else if (dataStruct.sensorName == "Humidity"){
+            file << dataStruct.sensorName << ", " << dataStruct.data << " %" << std::endl;
+        } else if (dataStruct.sensorName == "Sound"){
+            file << dataStruct.sensorName << ", " << dataStruct.data << " dB" << std::endl;
+        }
+
         file.close(); // Close the file
     }
 }

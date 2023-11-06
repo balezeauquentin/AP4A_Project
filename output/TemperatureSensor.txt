@@ -1,27 +1,41 @@
-TemperatureSensor, 8.599226
-TemperatureSensor, 3.267554
-TemperatureSensor, 33.105804
-TemperatureSensor, 37.437050
-TemperatureSensor, 31.795841
-TemperatureSensor, 40.823868
-TemperatureSensor, 30.005255
-TemperatureSensor, 10.529859
-TemperatureSensor, 21.300219
-TemperatureSensor, 38.686558
-TemperatureSensor, 16.131248
-TemperatureSensor, 17.233988
-TemperatureSensor, 35.196327
-TemperatureSensor, 47.685055
-TemperatureSensor, 35.608543
-TemperatureSensor, 20.124966
-TemperatureSensor, 22.058834
-TemperatureSensor, 25.270397
-TemperatureSensor, 44.826561
-TemperatureSensor, 32.549492
-TemperatureSensor, 0.919233
-TemperatureSensor, 23.382910
-TemperatureSensor, 37.905388
-TemperatureSensor, 24.994844
-TemperatureSensor, 46.856163
-TemperatureSensor, 27.179462
-TemperatureSensor, 31.298347
+Temperature, 37.209656 °C
+Temperature, 29.238352 °C
+Temperature, 44.921764 °C
+Temperature, 44.471584 °C
+Temperature, 46.331165 °C
+Temperature, 21.704748 °C
+Temperature, 12.485532 °C
+Temperature, 9.006548 °C
+Temperature, 0.541048 °C
+Temperature, 1.109369 °C
+Temperature, 32.744438 °C
+Temperature, 16.225761 °C
+Temperature, 3.728924 °C
+Temperature, 46.275303 °C
+Temperature, 28.659079 °C
+Temperature, 13.251047 °C
+Temperature, 22.045120 °C
+Temperature, 29.164356 °C
+Temperature, 16.904392 °C
+Temperature, 42.153885 °C
+Temperature, 13.865108 °C
+Temperature, 37.429256 °C
+Temperature, 4.137208 °C
+Temperature, 22.455431 °C
+Temperature, 18.375998 °C
+Temperature, 24.859419 °C
+Temperature, 24.095802 °C
+Temperature, 26.995480 °C
+Temperature, 27.279499 °C
+Temperature, 34.352993 °C
+Temperature, 1.307997 °C
+Temperature, 43.999012 °C
+Temperature, 21.386650 °C
+Temperature, 43.504883 °C
+Temperature, 38.147770 °C
+Temperature, 21.064606 °C
+Temperature, 42.649536 °C
+Temperature, 16.339441 °C
+Temperature, 13.152019 °C
+Temperature, 21.267445 °C
+Temperature, 46.248627 °C

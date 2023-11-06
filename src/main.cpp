@@ -23,19 +23,23 @@ int main(int argc, char const *argv[]) {
     for (int i = 1; i < argc; i++) { // Loop through the command line arguments
         string arg = argv[i]; // Get the current argument
         if (arg == "-l" || arg == "--log") { // Check if the argument is for logging
+            cout << "Log output active" << endl; // Display a message to the console
             logActivation = true; // Activate logging
         } else if (arg == "-c" || arg == "--console") { // Check if the argument is for console output
             consoleActivation = true; // Activate console output
+            cout << "Console output active" << endl; // Display a message to the console
         } else if(arg == "-v" || arg == "--version"){ // Check if the argument is for displaying the version number
             cout << "Version 1.21" << endl; // Display the version number
             return 0; // Exit the program
         } else if (arg == "-h" || arg == "--help") { // Check if the argument is for displaying the help message
             cout << "Utilisation : programme [option]\n\n"
-                << "Options : -h, --help      Affiche ce message d'aide et quitte le programme.\n"
-                << "          -v, --version   Affiche la version du programme et quitte le programme.\n"
-                << "          -l, --log       Active l'affichage des messages dans les logs.\n"
-                << "          -c, --console   Active l'affichage dans la console." << endl; // Display the help message
+                 << "Options : -h, --help      Affiche ce message d'aide et quitte le programme.\n"
+                 << "          -v, --version   Affiche la version du programme et quitte le programme.\n"
+                 << "          -l, --log       Active l'affichage des messages dans les logs.\n"
+                 << "          -c, --console   Active l'affichage dans la console." << endl; // Display the help message
             return 0; // Exit the program
+        }else {
+            cout << "Argument inconnu : " << arg << endl; // Display an error message
         }
     }
 

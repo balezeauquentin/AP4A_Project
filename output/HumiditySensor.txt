@@ -1,19 +1,37 @@
-HumiditySensor, 86.278755
-HumiditySensor, 60.854061
-HumiditySensor, 76.014915
-HumiditySensor, 48.273022
-HumiditySensor, 39.412785
-HumiditySensor, 90.609413
-HumiditySensor, 41.021290
-HumiditySensor, 27.847851
-HumiditySensor, 83.384773
-HumiditySensor, 22.744661
-HumiditySensor, 53.215481
-HumiditySensor, 4.078358
-HumiditySensor, 71.668587
-HumiditySensor, 45.708344
-HumiditySensor, 43.787762
-HumiditySensor, 48.197025
-HumiditySensor, 56.352818
-HumiditySensor, 69.149437
-HumiditySensor, 42.291710
+Humidity, 26.684935 %
+Humidity, 21.753185 %
+Humidity, 73.425293 %
+Humidity, 98.016510 %
+Humidity, 4.249963 %
+Humidity, 94.024139 %
+Humidity, 0.808822 %
+Humidity, 79.871841 %
+Humidity, 16.107298 %
+Humidity, 10.735171 %
+Humidity, 89.388016 %
+Humidity, 63.446815 %
+Humidity, 41.352989 %
+Humidity, 71.040909 %
+Humidity, 96.941536 %
+Humidity, 38.170471 %
+Humidity, 43.484009 %
+Humidity, 16.864412 %
+Humidity, 20.613401 %
+Humidity, 75.239975 %
+Humidity, 58.652275 %
+Humidity, 8.495850 %
+Humidity, 5.885779 %
+Humidity, 0.139592 %
+Humidity, 27.803465 %
+Humidity, 84.113777 %
+Humidity, 35.817871 %
+Humidity, 23.487621 %
+Humidity, 93.248260 %
+Humidity, 52.381779 %
+Humidity, 67.324707 %
+Humidity, 26.367325 %
+Humidity, 54.358154 %
+Humidity, 69.630898 %
+Humidity, 5.135949 %
+Humidity, 77.189568 %
+Humidity, 79.437134 %

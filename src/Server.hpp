@@ -54,33 +54,41 @@ public:
      * @param fileName The name of the file where the data is stored.
      */
     template <typename T>
-void dataRcv(T sensorData, std::string fileName){
-    // Create a new SensorData structure
-    SensorData dataSent;
+    void dataRcv(T sensorData, std::string fileName){
+        // Create a new SensorData structure
+        SensorData dataSent;
 
-    // Convert the sensor data to a string
-    string sensorDataString = to_string(sensorData);
+        // Convert the sensor data to a string
+        string sensorDataString = to_string(sensorData);
 
-    // Store the sensor data string in the SensorData structure
-    dataSent.data = sensorDataString;
+        // Store the sensor data string in the SensorData structure
+        dataSent.data = sensorDataString;
 
-    // Store the file name in the SensorData structure
-    dataSent.fileName = fileName;
+        // Store the file name in the SensorData structure
+        dataSent.fileName = fileName;
 
-    // Store the sensor name in the SensorData structure
-    dataSent.sensorName = fileName;
+        // Store the sensor name in the SensorData structure
+        dataSent.sensorName = fileName;
 
-    // Remove the last 4 characters from the sensor name (presumably the file extension)
-    dataSent.sensorName.erase(dataSent.sensorName.end()-4, dataSent.sensorName.end());
+        // Remove the last 4 characters from the sensor name (presumably the file extension)
+        dataSent.sensorName.erase(dataSent.sensorName.end()-10, dataSent.sensorName.end());
 
-    // If logging is activated, send the SensorData structure to the server for processing
-    if(logActivation){
-        (*this) << dataSent;
-    }
+        // If logging is activated, send the SensorData structure to the server for processing
+        if(logActivation){
+            (*this) << dataSent;
+        }
 
-    // If console output is activated, send a string containing the sensor name and data to the server for output
-    if (consoleActivation){
-        (*this) << dataSent.sensorName + ", "+ sensorDataString;
-    }
+        // If console output is activated, send a string containing the sensor name and data to the server for output
+        if (consoleActivation){
+            if (dataSent.sensorName == "Temperature"){
+                (*this) << "[" + dataSent.sensorName + "] " + dataSent.data + " Celsius";
+            } else if (dataSent.sensorName == "Humidity"){
+                (*this) << "[" + dataSent.sensorName + "] " + dataSent.data + " %";
+            } else if (dataSent.sensorName == "Light"){
+                (*this) << "[" + dataSent.sensorName + "] " + dataSent.data + " db";
+            } else if (dataSent.sensorName == "Sound"){
+                (*this) << "[" + dataSent.sensorName + "] " + dataSent.data + " lux";
+            }
+        }
 }};
 #endif // SERVER_HPP

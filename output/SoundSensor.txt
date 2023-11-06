@@ -1,13 +1,25 @@
-SoundSensor, 73
-SoundSensor, 70
-SoundSensor, 37
-SoundSensor, 36
-SoundSensor, 19
-SoundSensor, 46
-SoundSensor, 56
-SoundSensor, 70
-SoundSensor, 8
-SoundSensor, 92
-SoundSensor, 53
-SoundSensor, 68
-SoundSensor, 54
+Sound, 67 dB
+Sound, 5 dB
+Sound, 90 dB
+Sound, 81 dB
+Sound, 29 dB
+Sound, 9 dB
+Sound, 88 dB
+Sound, 10 dB
+Sound, 55 dB
+Sound, 36 dB
+Sound, 71 dB
+Sound, 55 dB
+Sound, 56 dB
+Sound, 82 dB
+Sound, 46 dB
+Sound, 73 dB
+Sound, 64 dB
+Sound, 76 dB
+Sound, 30 dB
+Sound, 6 dB
+Sound, 27 dB
+Sound, 42 dB
+Sound, 10 dB
+Sound, 80 dB
+Sound, 45 dB
